@@ -1,3 +1,56 @@
-h1 {
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-image: linear-gradient(to right, rgb(207, 74, 98), rgb(88, 172, 227));
+    color: white;
+}
+
+.container {
+    border: 1px solid black;
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.nav h2 {
+    font-size: 2rem;
+}
+
+.user-input {
+    border: 1px solid black;
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input {
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all o.30s ease-in-out;
+    -moz-transition: all o.30s ease-in-out;
+    -ms-transition: all o.30s ease-in-out;
+    -o-transition: all o.30s ease-in-out;
+    transition: all o.30s ease-in-out;
+}
+
+.user-input input:focus {
+    box-shadow: 0 0 5px #e22865;
+    border: 1px solid #e22865;
 }
