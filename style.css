@@ -71,3 +71,41 @@ body {
     background-color: transparent;
     color: white;
 }
+
+.to-do-items {
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    /*1rem = 16px*/
+    text-transform: uppercase;
+    /*text entered in lower case is transformed to upper after entered to the list*/
+    -webkit-transition: all o.30s ease-in-out;
+    -moz-transition: all o.30s ease-in-out;
+    -ms-transition: all o.30s ease-in-out;
+    -o-transition: all o.30s ease-in-out;
+    transition: all o.30s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px #e22865;
+    border: 1px solid #e22865;
+}
+
+.item i {
+    /*icons*/
+    cursor: pointer;
+    /*margin on the left and the right of 5px*/
+    margin: 0 5px;
+
+}
