@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-    border: 1px solid black;
     width: 95%;
     margin: auto;
 }
@@ -31,7 +30,6 @@ body {
 }
 
 .user-input {
-    border: 1px solid black;
     width: 350px;
     text-align: center;
 }
@@ -78,6 +76,7 @@ body {
 }
 
 .item {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -107,5 +106,35 @@ body {
     cursor: pointer;
     /*margin on the left and the right of 5px*/
     margin: 0 5px;
+}
 
+@media(max-width:768px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2 {
+        margin: 10px 0;
+    }
+
+    .user-input {
+        width: 100%;
+    }
+
+    .to-do-items {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .user-input {
+        width: 74%;
+    }
+}
+
+@media(max-width:320px) {
+    .user-input {
+        width: 60%;
+    }
 }
