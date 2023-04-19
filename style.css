@@ -35,7 +35,8 @@ body {
 }
 
 .user-input input {
-    width: 80%;
+    width: 65%;
+    /*changed from 80% because submit button moved below input*/
     outline: none;
     padding: 8px;
     border: 1px solid lightgray;
@@ -111,7 +112,7 @@ body {
 @media(max-width:768px) {
     .nav {
         align-items: center;
-        flex-direction: column;
+        flex-direction: auto;
     }
 
     .nav h2 {
