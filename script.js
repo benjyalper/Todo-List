@@ -16,7 +16,7 @@ function addItem() {
     divParent.className = "item";
     divParent.innerHTML = '<div>' + input.value + '</div>';
 
-    checkIcon.className = "fas fa-clipboard-check";
+    checkIcon.className = "fas fa-check-square";
     checkIcon.style.color = "lightgray";
     checkIcon.addEventListener("click", function () {
         checkIcon.style.color = "limegreen";
@@ -24,7 +24,7 @@ function addItem() {
 
     divChild.appendChild(checkIcon);
 
-    trashIcon.className = "fas fa-clipboard-check";
+    trashIcon.className = "fas fa-trash";
     trashIcon.style.color = "darkgrey";
     trashIcon.addEventListener("click", function () {
         divParent.remove();
